@@ -1,0 +1,9 @@
+h1. APLICAÇÃO POSXML
+
+Simples aplicação POSXML feita para viabilizar testes de integração da plataforma WALK.
+
+h2. UTILIZAÇÃO
+
+Esta aplicação precisa ser compilada com o "WALK Compiler":http://walk-docs.planobe.com.br/pt-BR/walk-compiler. O tutorial com o passo-a-passo pode ser encontrado em:
+
+"http://walk-docs.planobe.com.br/pt-BR/walk-server-integracao":http://walk-docs.planobe.com.br/pt-BR/walk-server-integracao
