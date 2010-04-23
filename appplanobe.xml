@@ -1,0 +1,26 @@
+<aplicativoposxml xmlns="http://tempuri.org/posxml.xsd">
+	<pagina nome="principal">
+		<variavelint valor="0" variavel="iOpcao" />
+
+		<menu variavel="$(iOpcao)" opcoes="** PLATAFORMA WALK ** \\1. Venda\\2. Saldo" />
+		<guardavariavel variavel="$(iOpcao)" />
+
+		<if variavel="$(iOpcao)" operador="equalto" valor="1" >
+			<variavelint valor="0" variavel="iValor" />
+
+			<digitavalor variavel="$(iValor)" linha="2" coluna="0" mensagem="Digite o valor" />
+			<guardavariavel variavel="$(iValor)" />
+		</if>
+
+		<limpadisplay />
+
+		<conectar />
+	</pagina>
+
+	<pagina nome="pagina_retorno">
+		<display coluna="0" linha="0" mensagem="** PLATAFORMA WALK **" />
+		<display coluna="0" linha="2" mensagem="[msg]" />
+
+		<esperatecla />
+	</pagina>
+</aplicativoposxml>
